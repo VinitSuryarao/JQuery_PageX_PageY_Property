@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title> JQuery Test  </title>
+   <style>
+      #divA{
+         background-color: palegreen;
+         position: relative;
+         border: 1px solid black;
+      }
+   </style>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type = "text/javascript">
+
+		    // ready func call when document is ready to render
+         $(document).ready(function() 
+         {     
+            $(document).mousemove(function(event){
+
+               $('#divA').text("X Axis ="+event.pageX + " Y Axis ="+ event.pageY);
+
+            });
+         });
+     </script>
+<head>
+   <body>
+   <div id="divA">
+   </div>
+</body>
+</html>
